@@ -93,4 +93,57 @@ h1 {
   width: auto;
   color: #e0fbfc;
   margin: 20px;
+.racebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 110px;
+  height: 110px;
+  margin: 8px;
+
+  border-radius: 12px;
+  border: 2px solid #98c1d9;
+
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+
+  cursor: pointer;
+}
+.race-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+body {
+  background-color: #3d5a80;
+  color: white;
+  margin: 15px;
+}
+
+#main_header {
+  padding: 5px;
+  background-color: #ee6c4d;
+}
+.main_header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px;
+  color: #e0fbfc;
+}
+
+h2 {
+  color: #e0fbfc;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 25px;
+  font-size: 1.25em;
+}
+a:hover {
+  color: lightgray;
+  transform: scale(1.06);
 }
