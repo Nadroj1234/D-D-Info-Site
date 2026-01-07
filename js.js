@@ -23,6 +23,8 @@ const size_button = document.getElementById("size_button");
 
 const type_button = document.getElementById("type_button");
 
+const speed_button = document.getElementById("speed_button");
+
 const armour_class_type_button = document.getElementById(
   "armour_class_type_button"
 );
@@ -138,7 +140,36 @@ actions_button.addEventListener("click", () => {
         return response.json();
       })
       .then((result) => {
-        mosnter_info_display.textContent = result.actions[0];
+        mosnter_info_display.textContent = result.actions[0].name;
+        console.log(result);
+
+        const actionsList = result.actions
+          .map((action) => `${action.name}: ${action.desc}`)
+          .join("\n\n");
+        mosnter_info_display.textContent = actionsList;
+      })
+      .catch((error) => console.error(error));
+  }
+  getMonster();
+  monster.value = "";
+});
+
+speed_button.addEventListener("click", () => {
+  function getMonster() {
+    fetch(
+      `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        mosnter_info_display.textContent = "";
+        if (result.speed) {
+          Object.entries(result.speed).forEach(([type, value]) => {
+            mosnter_info_display.textContent += `${type}: ${value}\n`;
+          });
+        }
         console.log(result);
       })
       .catch((error) => console.error(error));

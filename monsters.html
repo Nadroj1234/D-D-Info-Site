@@ -12,6 +12,8 @@
         <h1 class="main_header">DND Monsters</h1>
       </div>
       <div class="nav_buttons">
+        <a href="index.html"><button id="spells">Home</button></a>
+
         <a href="spells.html"><button id="spells">Spells</button></a>
         <a href="spells.html"><button id="races">Races</button></a>
       </div>
@@ -31,14 +33,19 @@
         <h1>Info</h1>
       </div>
       <div class="buttons">
-        <button id="name_button" type="submit">Name</button>
-        <button id="desc_button" type="submit">Desc</button>
-        <button id="size_button" type="submit">Size</button>
-        <button id="type_button" type="submit">Type</button>
-        <button id="armour_class_type_button" type="submit"
+        <button class="stat_button" id="name_button" type="submit">Name</button>
+        <button class="stat_button" id="desc_button" type="submit">Desc</button>
+        <button class="stat_button" id="size_button" type="submit">Size</button>
+        <button class="stat_button" id="type_button" type="submit">Type</button>
+        <button class="stat_button" id="armour_class_type_button" type="submit"
           >Armour Class Type</button
         >
-        <button id="actions_button" type="submit">Actions</button>
+        <button class="stat_button" id="actions_button" type="submit"
+          >Actions</button
+        >
+        <button class="stat_button" id="speed_button" type="submit"
+          >Speed</button
+        >
       </div>
 
       <div id="mosnter_info_display"></div>

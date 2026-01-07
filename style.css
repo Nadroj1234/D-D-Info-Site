@@ -19,6 +19,12 @@ body {
   background-color: #ee6c4d;
 }
 
+#mosnter_info_display {
+  color: #e0fbfc;
+  font-size: 35px;
+  height: 500px;
+}
+
 .button {
   margin: 5px;
   padding: 5px;
@@ -50,80 +56,18 @@ h1 {
 }
 
 /* Info Buttons */
-#name_button {
+
+.stat_button {
   background-color: #293241;
   color: #e0fbfc;
   width: 100px;
   height: 100px;
   border-radius: 8px;
   font-size: 15px;
-}
-#name_button:hover {
-  background-color: #3d5a80;
-  cursor: pointer;
+  margin: 5px;
 }
 
-#desc_button {
-  background-color: #293241;
-  color: #e0fbfc;
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-#desc_button:hover {
-  background-color: #3d5a80;
-  cursor: pointer;
-}
-
-#size_button {
-  background-color: #293241;
-  color: #e0fbfc;
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-#size_button:hover {
-  background-color: #3d5a80;
-  cursor: pointer;
-}
-
-#type_button {
-  background-color: #293241;
-  color: #e0fbfc;
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-#type_button:hover {
-  background-color: #3d5a80;
-  cursor: pointer;
-}
-
-#armour_class_type_button {
-  background-color: #293241;
-  color: #e0fbfc;
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-#armour_class_type_button:hover {
-  background-color: #3d5a80;
-  cursor: pointer;
-}
-
-#actions_button {
-  background-color: #293241;
-  color: #e0fbfc;
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-#actions_button:hover {
+.stat_button:hover {
   background-color: #3d5a80;
   cursor: pointer;
 }
@@ -131,6 +75,7 @@ h1 {
 .buttons {
   background-color: #ee6c4d;
   padding: 5px;
+  display: flex;
 }
 
 /* nav buttons */
