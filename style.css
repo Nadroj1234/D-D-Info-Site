@@ -32,12 +32,19 @@ body {
   padding: 5px;
   background-color: #ee6c4d;
 }
-
 .main_header {
+  display: flex;
+  flex-wrap: nowrap;
   padding: 5px;
   color: #e0fbfc;
 }
 
 h2 {
   color: #e0fbfc;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 25px;
+  font-size: 1.25em;
 }
