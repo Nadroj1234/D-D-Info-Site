@@ -133,8 +133,12 @@ body {
   flex-wrap: nowrap;
   padding: 5px;
   color: #e0fbfc;
+  padding-left: 0;
+  margin-left: 0;
 }
-
+.header_btn {
+  margin-top: 25px;
+}
 h2 {
   color: #e0fbfc;
 }
