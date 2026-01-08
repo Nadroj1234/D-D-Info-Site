@@ -33,9 +33,6 @@ let stored_data = "";
 
 submit_button.addEventListener("click", () => {
   stored_data = monster.value.trim();
-});
-
-name_button.addEventListener("click", () => {
   function getMonster() {
     fetch(
       `https://www.dnd5eapi.co/api/2014/monsters/${stored_data}`,
@@ -45,10 +42,21 @@ name_button.addEventListener("click", () => {
         return response.json();
       })
       .then((result) => {
-        mosnter_info_display.textContent = result.name;
+        if (result.name == undefined) {
+          document.getElementById("current-monster").textContent =
+            " No monster name provided";
+        } else {
+          document.getElementById("current-monster").textContent =
+            "Current Monster:" + result.name;
+        }
+
         console.log(result);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        console.error(error);
+        document.getElementById("current-monster").textContent =
+          "Not A Valid Monster";
+      });
   }
   getMonster();
   monster.value = "";

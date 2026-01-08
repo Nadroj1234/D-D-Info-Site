@@ -21,18 +21,20 @@
       <div class="button">
         <div class="monster_input_div">
           <h2>Monster</h2>
-          <input id="monster" type="text" />
         </div>
-
+        <div class="monster_input_div">
+          <label>Enter Monster Name:</label> <input id="monster" type="text" />
+        </div>
         <div class="search_div">
-          <button id="submit_button" type="submit">Submit</button>
+          <button id="submit_button" type="submit">Search</button>
         </div>
       </div>
+      <div id="current-monster"></div>
+
       <div class="header">
         <h1>Info</h1>
       </div>
-      <div class="buttons">
-        <button class="stat_button" id="name_button" type="submit">Name</button>
+      <div class="stat-container">
         <button class="stat_button" id="desc_button" type="submit">Desc</button>
         <button class="stat_button" id="size_button" type="submit">Size</button>
         <button class="stat_button" id="type_button" type="submit">Type</button>
@@ -50,5 +52,5 @@
       <div id="mosnter_info_display"></div>
     </div>
   </body>
-  <script src="./js.js"></script>
+  <script src="./monsters.js"></script>
 </html>
