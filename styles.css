@@ -1,4 +1,16 @@
 .main_header {
-  background-color: #726e60;
-  color: #dbff76;
+  background-color: #ee6c4d;
+  color: #e0fbfc;
+}
+
+body {
+  background-color: #3d5a80;
+}
+
+.info_title {
+  color: #98c1d9;
+}
+
+.main_info_header {
+  color: #98c1d9;
 }
