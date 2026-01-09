@@ -12,34 +12,58 @@
         <h1 class="main_header">D&D Spells</h1>
       </div>
     </div>
-    <div id="display_info">
-      <div class ="info_body">
-        <h2 class="info_title">Spells</h2>
+    <div class="info_body">
+      <h2 class="info_title">Spells</h2>
       <div class="button">
         <div class="spell" type="text">
           <input
             class="search_input"
+            id="input_spell"
             type="text"
             placeholder="Enter Spell Name"
           />
-          <button class="search_button" type="submit">Search</button>
+          <button class="search_button" id="submit_button" type="submit">
+            Search
+          </button>
         </div>
       </div>
     </div>
-    <div id="spell_info">
-      <div class = "main_info_title">
-        <h1 class = "main_info_header">Spell Information</h1>
+    <div id="spell_stuff">
+      <div class="main_info_title">
+        <h1 class="main_info_header">Spell Information</h1>
       </div>
-      <div class = "main_info_body"></div>
-      <div class = "start_button" id = "spell_name_button" type = "submit">Spell Name</div>
-      <div class = "start_button" id = "spell_desc_button" type = "submit">Description</div>
-      <div class = "start_button" id = "spell_level_button" type = "submit">Spell Level</div>          
-      <div class = "start_button" id = "spell_range_button" type = "submit">Range</div>
-      <div class = "start_button" id = "spell_duration_button" type = "submit">Duration</div>
-      <div class = "start_button" id = "school_button" type = "submit">School</div>
-      <div class = "start_button" id = "casting_time_button" type = "submit">Casting Time</div>
-      <div class = "start_button" id = "classes_button" type = "submit">Classes</div>
+      <div class="main_info_body">
+        <button class="start_button" id="spell_name_button" type="submit">
+          Spell Name
+        </button>
+        <button class="start_button" id="spell_desc_button" type="submit">
+          Description
+        </button>
+        <button class="start_button" id="spell_level_button" type="submit">
+          Spell Level
+        </button>
+        <button class="start_button" id="spell_range_button" type="submit">
+          Range
+        </button>
+        <button class="start_button" id="spell_duration_button" type="submit">
+          Duration
+        </button>
+        <button class="start_button" id="spell_school_button" type="submit">
+          School
+        </button>
+        <button
+          class="start_button"
+          id="spell_casting_time_button"
+          type="submit"
+        >
+          Casting Time
+        </button>
+        <button class="start_button" id="spell_classes_button" type="submit">
+          Classes
+        </button>
+      </div>
     </div>
+    <div id="spell_info"></div>
   </body>
   <script src="./js.js"></script>
 </html>
